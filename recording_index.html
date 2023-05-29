@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Recorder</title>
+    <link rel="stylesheet" href="recording_style.css" />
+    <link rel="icon" type="image/png" href="./img/rec.png" />
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <!-- <script src="sketch.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>
+    <script src="p5.speech.js"></script> -->
+  </head>
+
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img
+          src="image 3.png"
+          alt=""
+          width="150"
+          height="30"
+          class="float-left"
+      /></a>
+      <div class="timetable">
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+    </header>
+    <!-- Page number -->
+    <ul>
+      <li class="pagenumber"><a href="#">1</a></li>
+      <li class="pagenumber"><a href="#">2</a></li>
+      <li class="pagenumber" id="current">
+        <a href="recorder_order.html">3</a>
+      </li>
+    </ul>
+
+    <!-- Data and Recording Sheet -->
+    <div class="sheet">
+      <div class="card" id="data">
+        <div class="kontenData">
+          <div id="namaPasien">
+            <h1>Nama</h1>
+            <div class="nama" id="dataPasien"></div>
+          </div>
+          <div class="usiaPasien">
+            <h1>Usia</h1>
+            <div class="usia" id="dataPasien"></div>
+          </div>
+          <div class="kelaminPasien">
+            <h1>Jenis kelamin</h1>
+            <div class="kelamin" id="dataPasien"></div>
+          </div>
+          <div class="beratPasien">
+            <h1>Berat Badan</h1>
+            <div class="berat" id="dataPasien"></div>
+          </div>
+        </div>
+      </div>
+      <div class="console">
+        <div class="content">
+          <h1 class="title">Perekaman Data Wicara</h1>
+          <h3 class="subtitel">Tekan tombol merah untuk memulai</h3>
+        </div>
+        <div id="sketch-holder"></div>
+        <div class="stopwatch"></div>
+        <div class="button">
+          <button class="rec">Rec</button>
+          <button type="submit" class="submit">Submit</button>
+          <button class="stop">Stop</button>
+        </div>
+      </div>
+      <div class="popup">
+        <h1>Terima kasih</h1>
+        <p>
+          Pengambilan data telah usai. Anda dapat meninggalkan ruangan
+        </p>
+        <a href="index.html">
+          <button type="button">OK</button>
+        </a>
+      </div>
+    </div>
+    <script src="recording_main.js"></script>
+  </body>
+</html>

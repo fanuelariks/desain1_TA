@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --blue:#BFD1D9;
+    --gray:#8D9FA6;
+    --yellow: #D9AE5F;
+    --font: #404040;
+    --box: #595959;
+    --fontGray: #D9D9D9;
+    /* --pagenumber: #ecce95; */
+    --box-shadow:0 5px 15px rgba(0,0,0,.2); 
+    --border: .2rem solid var(--fontGray); 
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+}   
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding: 7rem 2rem;
+}
+/* Header-Logo and Time */
+
+header{
+    padding: .5rem 5%;
+    background: #ffff;
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0 .1rem 15rem var(--fontGray);
+    z-index: 1000;
+}
+
+.timetable .date{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.timetable .time{
+    margin: 0 1rem;
+    font-size: 2.5rem;
+}
+
+/* Home Section */
+.sheet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* Page Number*/
+ul {
+    position: absolute;
+    background: #ffff;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    width: fit-content;
+    transform: translate(-50%,-50%);
+    top: 21%;
+    left: 50%;
+    align-items: flex-start;
+    /* justify-content: center; */
+    text-align: center;
+    text-decoration: none;
+    /* background: var(--pagenumber); */
+}
+
+ul li {
+    list-style: none;
+    line-height: 10px;
+    margin: 0 5px;
+    font-size: medium;
+    text-decoration: none;
+}
+
+ul li.pagenumber {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--font);
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+ul li.pagenumber:hover a,
+ul li.pagenumber.active a {
+    background: var(--blue);
+    color: var(--font);
+    text-decoration: none;
+}
+
+#current {
+    background: var(--blue);
+    border-radius: 50%;
+}
+
+#current a {
+    display: block;
+    text-decoration: none;
+    color: var(--font);
+}
+
+/* Data Person */
+#data {
+    width: 30%;
+    height: 60vh;
+    background: var(--blue);
+    position: relative;
+    box-shadow: var(--box-shadow);
+    /* transform: translate(40%,0%); */
+    /* align-items: flex-start; */
+    justify-content: center;
+    text-align: left;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.kontenData {
+    /* background-color: #D9AE5F; */
+    color: var(--font);
+    justify-items: center;
+    margin-top: 15%;
+}
+
+.kontenData h1 {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#dataPasien {
+    margin-bottom: 7%;
+    font-size: 14px;
+}
+/* Home Page */
+#content{
+    width: 68%;
+    height: 60vh;
+    background: var(--blue);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#content .headline h1{
+    align-items: flex-start;
+    color: var(--font);
+    margin-top: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#content .content{
+    align-items: center;
+    color: var(--font);
+    margin-top: 2%;
+    justify-content: center;
+    /* align-content: center; */
+    display: grid;
+    font-size: 1.5rem;
+    gap: .5em;
+}
+
+#content h3 {
+    font-size: 20px;
+}
+
+#content .content #petunjuk {
+    text-align: justify;
+    /* margin-top: 2%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.play {
+    font-weight: bold;
+}
+
+.mulai {
+    background-color: var(--box);
+    border: none;
+    color: var(--fontGray);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+@media (max-width:414px){
+    .timetable .date{
+        font-size: 1.3rem;
+    }
+    .timetable .time{
+        font-size: 2.3rem;
+    }
+    .container{
+        height: 35vh;
+    }
+
+    .container .headline h1{
+        font-size: 1.5rem;
+    }
+
+    .content .order {
+        font-size: 1rem;
+    }
+
+
+    .container .foot .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 836px) {
+    .container {
+        height: 30vh;
+    }
+}

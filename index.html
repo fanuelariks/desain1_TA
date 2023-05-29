@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Halloo</h1>
-    <p>Paragraf</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Project</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img
+          src="image 3.png"
+          alt=""
+          width="150"
+          height="30"
+          class="float-left"
+      /></a>
+      <div class="timetable">
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+    </header>
+
+    <!-- Body -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="content">
+          <h1>Selamat Datang!</h1>
+          <h3>Silakan klik tombol mulai</h3>
+        </div>
+        <a href="kues_order.html">
+          <button href="kues_order.html" class="mulai">Mulai</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- js link -->
+    <script src="main.js"></script>
+  </body>
 </html>
